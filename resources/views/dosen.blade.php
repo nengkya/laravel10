@@ -11,5 +11,15 @@
     <div>
 	Route::get('dosen', [DosenController::class, 'index']);
     </div>
+    <div>
+	{{ $name }}
+    </div>
+    <div>
+	@foreach($languages as $language)
+	    <li>
+		{{ $language }}
+	    </li>
+	@endforeach
+    </div>
 </body>
 </html>

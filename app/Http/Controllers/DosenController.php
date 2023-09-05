@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 class DosenController extends Controller
 {
     public function index(){
-	return view('dosen');
+	$name = "HaGa IT Solution";
+	$languages = ["Python", "PHP", "C"];
+	return view('dosen', ['name' => $name, 'languages' => $languages]);
     }
 }
