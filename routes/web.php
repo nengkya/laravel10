@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\DosenController;
-
+use App\Http\Controllers\LecturerController;
+use App\Http\Controllers\EmployeeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,7 +13,6 @@ use App\Http\Controllers\DosenController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
 Route::get('/', function(){
     return view('welcome');
 });
@@ -26,4 +25,6 @@ Route::get('blog', function(){
     return view('blog');
 });
 
-Route::get('dosen', [DosenController::class, 'index']);
+Route::get('lecturer', [LecturerController::class, 'index']);
+
+Route::get('employee/{name}', [EmployeeController::class, 'index']);

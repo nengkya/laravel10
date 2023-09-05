@@ -9,7 +9,7 @@
 	use App/Http/Controllers/DosenController;
     </div>
     <div>
-	Route::get('dosen', [DosenController::class, 'index']);
+	Route::get('lecturer', [LecturerController::class, 'index']);
     </div>
     <div>
 	{{ $name }}
