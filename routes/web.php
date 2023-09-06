@@ -28,3 +28,6 @@ Route::get('blog', function(){
 Route::get('lecturer', [LecturerController::class, 'index']);
 
 Route::get('employee/{name}', [EmployeeController::class, 'index']);
+
+Route::get('/form', [EmployeeController::class, 'form']);
+Route::get('form/process', [EmployeeController::class, 'form_process']);
